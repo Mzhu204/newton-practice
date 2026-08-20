@@ -26,6 +26,8 @@ def newton(f, x0, h=0.001):
     while df(f, x, h=0.001) > 0.00001:  # 0.00001 is our stopping value
         x = x - (df(f, x, h=0.001) / d2f(f, x, h=0.001))
         count = count + 1
+    if count = 0:
+        raise Error 
     return x, count
 
 
